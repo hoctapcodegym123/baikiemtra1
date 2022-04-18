@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h3>Tính thể kỷ </h3>
+<input id="sonam" type="number" value="">
+
+<button onclick="tinh()">Tính</button>
+<p id="Theki"></p>
+
+
 </body>
 </html>
+<script>
+    function tinh(){
+        let a = document.getElementById('sonam').value
+        let a1=parseInt(a)
+        let theki = a1/100 + 1
+        let theki1=parseInt(theki)
+        document.getElementById('Theki').innerHTML = theki1
+    }
+
+</script>
