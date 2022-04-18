@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tính toán</h3>
+<p>Nhập số a <input id="so1" type="number" value=""></p>
+<p>Kết quả a^2</p>
+<p><input type="number" id="tinh1"></p>
+<p>Nhập số b <input id="so2" type="number" value=""></p>
+<p>Kết quả a^b</p>
+<p><input type="number" id="tinh2"></p>
+<p><button onclick="tinhtoan1()">Tính toán</button></p>
+</body>
+</html>
+<script>
+    function tinhtoan1(){
+        let a = document.getElementById("so1").value
+        let b = document.getElementById("so2").value
+        document.getElementById("tinh1").value=a**2
+        document.getElementById("tinh2").value=a**b
+    }
+</script>

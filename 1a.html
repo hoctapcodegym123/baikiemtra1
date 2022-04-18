@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Diện tích hình vuông</h3>
+<p>Nhập độ dài cạnh a <input id="dodai" type="number" value=""></p>
+<p><button onclick="chucnangtinh1()">Kết quả diện tích</button></p>
+<p><input type="number" id="Dientichvuong"></p>
+<h3>Chu vi hình vuông</h3>
+<p>Nhập độ dài cạnh b <input id="dodai2" type="number" value=""></p>
+<p><button onclick="chucnangtinh2()">Kết quả diện tích</button></p>
+<p><input type="number" id="Chuvivuong"></p>
+</body>
+</html>
+<script>
+    function chucnangtinh1(){
+        let a = document.getElementById('dodai').value
+        document.getElementById('Dientichvuong').value =a**2
+    }
+    function chucnangtinh2(){
+        let a = document.getElementById('dodai2').value
+        document.getElementById('Chuvivuong').value =a*4
+    }
+</script>
