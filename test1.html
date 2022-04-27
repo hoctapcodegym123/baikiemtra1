@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  z=parseInt(prompt('Nhập số phần tử của mảng'))
+  for (let j = 0; j < z ; j++) {
+    arr[j]=parseInt(prompt("Nhập phần tử thứ " +j))
+  }
+  function sapxep(arr){
+    for (let i = 0; i < arr.length ; i++) {
+      for (let j = i+1 ; j < arr.length ; j++) {
+        let temp = 0
+        if (arr[i] < arr[j]) {
+          temp = arr[i]
+          arr[i]=arr[j]
+          arr[j] = temp
+        }
+      }
+    } return arr
+  }
+
+  console.log(arr)
+  function max3(arr) {
+    let  max3 = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== arr[i + 1]) {
+        for (let j = i + 1; j < arr.length; j++) {
+          if (arr[j] !== arr[j+1]) { max3 = arr[j+1]
+            break }
+        }
+        break }
+    } return max3
+  }
+  sapxep(arr)
+  let a = max3(arr)
+  console.log(a)
+</script>
+</body>
+</html>

@@ -9,7 +9,7 @@
 <input id="so1" type="number" value="">
 <input id="so2" type="number" value="" >
 <button onclick="tinh()">Tính</button>
-<p id="tinhtoan"></p>
+<p id="tinhtoan"><input type="number"></p>
 </body>
 </html>
 <script>
@@ -17,8 +17,8 @@
         let a = +document.getElementById('so1').value
         let b = +document.getElementById('so2').value
         let tong = 0
-        for (let i = a; i < b; i++) {
-            tong = tong + i
+        for (; a <= b; a++) {
+            tong = tong + a
         }
         document.getElementById('tinhtoan').innerHTML = tong
 

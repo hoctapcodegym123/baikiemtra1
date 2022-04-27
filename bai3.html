@@ -9,13 +9,13 @@
 </body>
 </html>
 <script>
-    let a = prompt("Enter your number :");
+    let a = parseInt(prompt("Enter your number :"));
     let i = 2;
     let check = true
     if (a % 2 == 0) {
         alert('a chia hết cho 2')
     } else {
-        for (i = 2; i <= a / 2; i++){
+        for (i = 2; i < a; i++){
             if (a % i === 0) {
                 check = false;
                 break;
